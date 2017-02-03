@@ -11,24 +11,93 @@
    Supporting Files: none
 
 */
+
 body {
     font-family: tahoma, geneva, sans-serif;
 }
 
 header#articleheader {
     /*font-size: 18px;*/
-    font-size: 18px;
-    font-weight: normal;
+    font: 18px normal;
     letter-spacing: 7px;
     text-align: center;
 }
-nav{
-  background-color: rgb(125, 120, 89)
+
+#leftsection {
+    font-size: 22px;
 }
-nav ul {
+
+#rightsection h1 {
+    font: 22px normal;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#rightsection h2 {
+    font: 18px normal;
+    text-align: right;
+}
+
+#rightsection p {
+    font: 14px gray;
+    text-align: justify;
+}
+
+#firstpair::first-line {
+    text-transform: capitalize;
+}
+
+
+/*Blockquote*/
+
+blockquote {
+    background-color: rgb(131, 121, 36);
+    color: white;
+    font-size: 16px;
+    font-family: "Comic Sans MS", Times, cursive;
+}
+
+blockquote p::before {
+    content: open-quote;
+}
+
+blockquote p::after {
+    content: close-quote;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(131, 121, 36);
     list-style-image: url(wheelmarker.png);
+}
+
+nav {
+    background-color: rgb(125, 120, 89)
+}
+
+nav ul {
     line-height: 3em;
     color: white;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/*Footer Styles*/
+
+footer address {
+    font: 16px normal;
+    text-align: center;
 }
 
 
